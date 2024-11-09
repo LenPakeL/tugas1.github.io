@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
+
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    margin-bottom: 0;
+    overflow-x: hidden;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 70px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 35px;
+    align-items: center;
+    box-shadow: 0px 1px 7px #4347453b;
+    z-index: 10000;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: 500;
+    color: #132058;
+}
+
+nav .logo span {
+    font-size: 30px;
+    color: #424d8b;
+    font-weight: bold;
+    text-shadow: -4px -4px 0px #1f1392;
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 14%;
+    position: relative;
+}
+
+
+
+
+nav ul li {
+    list-style: none;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: navy;
+    font-size: 18px;
+}
+
+nav ul li a:hover{
+    color: #bfdf86;
+    text-decoration: underline #a2b652 2.8px;
+
+}
+
+nav .other {
+    display: flex;
+    justify-content: space-between;
+    width: 6%;
+}
+
+
+nav .other span{
+    font-size: 30px;
+    color: #434745;
+    cursor: pointer;
+}
+
+.Home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+    height: 100vh;
+    background-image: url(img/image-PCBfByfqB-25802.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.Home .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.Home .title h1 {
+    font-size: 80px;
+}
+
+.about {
+    /* height: 100vh; */
+    background-color: #434745;
+    display: flex;
+    align-items: center;
+    padding-top: 120px;
+}
+
+.about .container {
+    /* height: 100vh; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.about .container .box {
+    width: 300px;
+    height: 200px;
+    background-color: #1f1392;
+    margin: 30px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    nav ul {
+        width: 50%;
+    }
+    
+    .about .container .box {
+        background-color: aqua;
+    }
+
+    .Home .title h1 {
+        font-size: 60px;
+    }
+  }
